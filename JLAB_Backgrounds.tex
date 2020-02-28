@@ -2,13 +2,43 @@
 %<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
  % Backgrounds
  %<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-\subsection{Backgrounds}
+\section{Backgrounds}
 
-\subsubsection{Coherent and incoherent backgrounds in the reaction}
+ \begin{figure}[tbh]
+\begin{center}
+%\includegraphics[height=5cm,viewport=250 180 0 360,clip=true]{CPP_production3}
+\includegraphics[height=5cm,clip=true]{figures/Diagram_Primakoff.png}
+\includegraphics[height=5cm,clip=true]{figures/Diagram_hadronic.png}
+\caption{Sketch of coherent two-pion production. Left) Signal: Primakoff mechanism, Right) Backgrounds: Other production mechanisms.
+\label{fig:Diagram}}
+\end{center}
+\end{figure}
 
-Coherent $\rho^0$ photo-production is not a background for this
-experiment because $\rho^0$ decay into the $\pi^0\pi^0$ channel is
-prohibited by I-spin conservation.  The largest coherent background is
+We first classify the various backgrounds and then describe them in more detail one at a time.
+We note that two important backgrounds for the charged-pion polarizability experiment do not contribute in this experiment:
+First, coherent $\rho^0$ photo-production is absent in this
+experiment because the $\rho^0$ decay into the $\pi^0\pi^0$ channel is prohibited by I-spin conservation.  Second, $\mu^+\mu^-$ production is also not a factor for the neutral pion case.
+We have the following categories of backgrounds:
+\begin{itemize}
+\item Coherent production: In this case, the target remains intact. Generically, one may classify the two-pion production
+according to the sketches in Fig.\,\ref{fig:Diagram}. The left-hand diagram represents the exchange of a virtual photon with the nucleus, i.e. the Primakoff
+mechanism. This mechanism is very long range and is affected minimally by the effects of shadowing or absorption.  This is the signal for the
+experiment and our goal is to determine its cross section.
+The right-hand diagram represents the exchange of a strongly interacting particle (or trajectory) and effectively results in the production of pions at the
+surface of the nucleus. We note that for the neutral pion production, pion exchange is not allowed due to charge conjugation conservation, while 
+for the charged pion case, single pion exchange is related to the axial anomaly ($\gamma \pi^0 \rightarrow \pi^+ \pi^-$).  When the interaction leaves the
+nuclear target intact, the reaction is referred to as ``nuclear coherent'' and this is our most serious background. 
+\item Incoherent production:  When the interaction produces two pions in the quasi-elastic scattering off a single
+nucleon, the scattered target usually fragments into particles that range out in the target and are unobservable experimentally. This reaction occurs at larger $-t$ and is generally
+kinematically distinct from the signal.
+\item Any reaction that may be confused with the signal within the experimental resolution or limited acceptance:
+ An example of this type of reaction is Primakoff production of $\eta$ mesons, where the $\eta\rightarrow \pi^0 \pi^0 \pi^0$  is
+mis-reconstructed as a two-pion final state. 
+\end{itemize}
+
+\subsection{Coherent backgrounds}
+
+ The largest coherent background is
 from $f_0(500)$ and $f_0(980)$ photo-production.  The width of the
 $f_0(980)$ is from 10 to 100~MeV, and can be eliminated from the data
 by a cut on $\pi^0\pi^0$ invariant mass.  The $f_0(500)$ width is much
@@ -36,6 +66,10 @@ not $A^2$.  For NPP it is expected that suppression of the nuclear
 coherent will be stronger than that seen in Primex because two pions
 are produced in NPP as compared to a single $\pi^0$ in Primex.  NPP
 plans to run on a heavy nuclear target such as $^{208}$Pb.
+
+
+\subsection{Incoherent backgrounds}
+
 
 The inelastic and incoherent reactions that might contribute to the
 data include
