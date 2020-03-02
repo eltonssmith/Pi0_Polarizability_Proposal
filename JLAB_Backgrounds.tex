@@ -37,36 +37,79 @@ mis-reconstructed as a two-pion final state.
 \end{itemize}
 
 \subsection{Coherent backgrounds}
-
- The largest coherent background is
-from $f_0(500)$ and $f_0(980)$ photo-production.  The width of the
-$f_0(980)$ is from 10 to 100~MeV, and can be eliminated from the data
-by a cut on $\pi^0\pi^0$ invariant mass.  The $f_0(500)$ width is much
+   
+ The largest coherent background is  
+from the $f_0(500)(J^{PC}=0^{++})$, also called the $\sigma$ meson, and the $f_0(980)$ photo-production.  The width of the
+$f_0(980)$ is fairly narrow and does not contribute directly to the strength near threshold.
+The $f_0(500)$width is much
 broader, from 400 to 700 MeV, with significant overlap in the
 invariant mass region of interest.  Since the $f_0(500)$ is a scalar
 particle with the same spin-parity as the $\gamma \gamma \rightarrow
 \pi^0\pi^0$ final state near threshold, the azimuthal distribution of
 the $\pi^0$ momentum or the $\pi^0\pi^0$ c.m. momentum relative to the
 photon polarization plane does not differentiate between coherent
-$f_0(500)$ production and the Primakoff reaction.  This is similar to
-the Primex-$\pi^0$ experiment, where the dominant background was
+$f_0(500)$ production and the Primakoff reaction.  
+This is similar to the Primex-$\pi^0$ experiment, where the dominant background was
 nuclear coherent $\pi^0$ photo-production.  The approach used in the
 Primex analysis was to measure the $\pi^0$ angular distribution,
 effectively the $t$-distribution, then use theoretical calculations of
 the angular distributions to separate out contributions from Primakoff
 and nuclear coherent. The analysis of the $\pi^0\pi^0$ (NPP) reaction
 will approximately parallel what was done for the Primex-$\pi^0$
-analysis.
+analysis.  
 
-Primex data also showed that the nuclear coherent process is highly
-suppressed for heavy nuclei.  The reason for the suppression is
+We parameterize the $\sigma$ meson as detailed in Appendix\,\ref{sec:NCsigma} and assume that the production amplitude can be factorized as
+\begin{eqnarray}
+\mathcal{A} & = & \mathcal{A}_t(t) \, \mathcal{A}_W(m_{\pi\pi}) \, \mathcal{A}_\tau(\Phi, \phi, \theta),
+\end{eqnarray}
+where the last factor represents the angular distribution that results in a 
+dependence on the di-pion azimuthal angle, $\phi_{\pi\pi}$, of the form $\mathcal{A}_\tau \propto (1 + \mathcal{P} \cos{2\phi_{\pi\pi}}$). 
+The mass dependence is given by the S-wave phase shifts that dominate the mass region below 0.8 GeV. We use the approximate description given in 
+Appendix\,\ref{sec:ParmSwave}.\footnote{More detailed studies may require including contributions from the D-wave and S-wave, I=2, amplitudes.} 
+
+ \begin{figure}[tbh]
+\begin{center}
+%\includegraphics[height=5cm,viewport=250 180 0 360,clip=true]{CPP_production3}
+\includegraphics[height=5cm,clip=true]{figures/fit_Primakoff_sigma_c1.png}
+\includegraphics[height=5cm,clip=true]{figures/PRC80_2009_Fig6.png}
+\caption{ Left) Approximation to strong form factor for lead, Right) Figure 6 from Ref.\,\cite{Gevorkyan:2009ge} showing the calculated strong form factor for single $\pi^0$ production off a lead target.
+\label{fig:strongFF}}
+\end{center}
+\end{figure}
+
+We assume the $-t$ dependence of the $\sigma$ has a similar form as for single $\pi^0$ production, namely $\mathcal{A}_t(t) \propto \sin{\theta_{\pi\pi}} \times F_{st}(t)$.  The $\sin{\theta_{\pi\pi}}$ 
+comes from the spin-flip required at forward angles to produce a $0^+$ system from a spin-zero target. The factor $F_{st}(t)$ is the strong form factor for the target, which is approximated to
+match calculations for the single $\pi^0$ production (Fig.\,6 from Ref.\cite{Gevorkyan:2009ge}). Our Gaussian approximation to the form factor is shown in Fig.\,\ref{fig:strongFF} along side the calculation for single 
+$\pi^0$ production. Efforts are underway to calculate the strong form factor for this reaction.\footnote{S. Gevorkyan, private communication.}.
+The Primex data showed that the nuclear coherent process is highly
+suppressed for heavy nuclei, as shown in the figure.  The reason for the suppression is
 $\pi^0$ absorption in the nuclear interior, making the coherent
 production primarily a surface effect, i.e. proportional to $A$ and
-not $A^2$.  For NPP it is expected that suppression of the nuclear
+not $A^2$.  For NPP it is expected that suppression of the nuclear  
 coherent will be stronger than that seen in Primex because two pions
-are produced in NPP as compared to a single $\pi^0$ in Primex.  NPP
-plans to run on a heavy nuclear target such as $^{208}$Pb.
+are produced in NPP as compared to a single $\pi^0$ in Primex.  
 
+ \begin{figure}[tbp]
+\begin{center}
+%\includegraphics[height=5cm,viewport=250 180 0 360,clip=true]{CPP_production3}
+\includegraphics[height=15cm,clip=true]{figures/fit_Primakoff_sigma.pdf}\
+\caption{ Angular distributions for a) Primakoff reaction only, b) Nuclear coherent reaction only, c) Sum of Primakoff and nuclear coherent, d) Same as c) with the nuclear coherent amplitude multiplied by 2.
+The curves represent fits to the coherent sum of the two components.
+\label{fig:fit_Primakoff_sigma}}
+\end{center}
+\end{figure}
+
+\subsection{Fits to the scattering angle}
+The Primakoff reaction is peaked at very small scattering angle $\theta_{\pi\pi} \sim m_{\pi\pi}^2 / 2E_\gamma^2 \sim 0.1-0.2^\circ$ for masses between 0.35 and 0.5 GeV, as shown in 
+Fig.\,\ref{fig:fit_Primakoff_sigma}a.  Nevertheless it is still an
+order-of-magnitude larger than the scattering angle for single $\pi^0$ production. The angular distribution for the nuclear coherent process on lead is shown in Fig.\,\ref{fig:fit_Primakoff_sigma}b, which 
+peaks at an angle of about $\theta_{\pi\pi} \sim 0.7^\circ$. The coherent sum of both processes, e.g. Fig.\,\ref{fig:fit_Primakoff_sigma}c and d, is a distribution that is considerably wider than the 
+Primakoff distribution alone, but a fit is required to determine the Primakoff signal. The amplitude of the NC component in Fig.\,\ref{fig:fit_Primakoff_sigma}d was generated with an amplitude that
+is twice that in Fig.\,\ref{fig:fit_Primakoff_sigma}c.  In order to extract the Primakoff component, we proceed as follows: We first parameterize the shapes of the Primakoff and
+NC components separately, as shown with the curves in Fig.\,\ref{fig:fit_Primakoff_sigma}a and b and the parameters for those shapes are fixed. Two distributions generated using both the Primakoff and
+NC amplitudes are shown in the bottom plots of Fig.\,\ref{fig:fit_Primakoff_sigma}c and d and then fit to the sum of the two distributions plus an interference term. We let the normalization of each
+component vary as well as the size of the interference term. The resulting fitted parameters are shown on the figures. 
+  
 
 \subsection{Incoherent backgrounds}
 
