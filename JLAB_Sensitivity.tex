@@ -18,14 +18,12 @@ these contributions in detail:
 \hline
     Errors and correction factors  &  Correction       & Statistical uncertainty    \\ 
                                                          &     factor            & in correction factor    \\  \hline \hline
-  Overall statistical error  &      &  0.6 \%    \\ \hline
-  Normalization to $\mu^+ \mu^-$  and relative trigger efficiency &     &  1 \%     \\ \hline
-  $\mu^+ \mu^-$ background in $\pi^+ \pi^-$ yield  & 0.03 \% &  0 \%   \\ \hline
-%  Relative acceptance  & ?? & ??  \\ \hline
-  Polarization  &   70\%   &  0.2 \%     \\ \hline
-  Pion identified as muon, and pion decay &  8 \%   &   1\%   \\ \hline
-  Total systematic error &   & 1.5 \% \\ \hline
-  Projected error in $\alpha - \beta$ &   &  10\%  \\ \hline
+  Overall statistical error  &      &  XX \%    \\ \hline
+  Flux normalization &     &  XX \%     \\ \hline
+  Background subtraction  & XX \% &  XX \%   \\ \hline
+  Detector acceptance and efficiency &  XX \%   &   XX\%   \\ \hline
+  Total systematic error &   & XX \% \\ \hline
+  Projected error in $\alpha - \beta$ &   &  XX\%  \\ \hline
  \hline
  \hline
 \end{tabular}
@@ -36,90 +34,30 @@ these contributions in detail:
 \begin{enumerate}
 
 \item
+Signal extraction.
 Overall statistical error:  This aggregate error is based on fitting the $\phi_{\pi \pi}$ distribution to
 extract the Primakoff yield, and then fitting a theoretical curve to the W$_{\pi \pi}$ data points (see figures \ref{sample_phi_psi_fit}-\ref{cpp_theory_fit}).
 
 \item
-Normalization to $\mu^+ \mu^-$ and relative trigger efficiency: 
-This is the estimated uncertainty for a calculation of $\gamma A \rightarrow \mu^+ \mu^- A$%, and the effect
-of uncertainties in the relative trigger efficiences of pions versus muons, 1 \%.  
+Flux normalization. 2\%.
 
 \item
-$\mu+ \mu^-$ background in $\pi^+ \pi^-$ yield: The background considered  here is the case where a muon fails to trigger the
-muon detector behind the iron shield.  If we assume the muon chamber has x, u, v planes with 95\% plane efficiency for minimum ionizing particles, then
-the overall chamber efficiency is 99.3\%. Assuming
-a 5:1 muon:pion ratio, then the probability for both tracks failing to trigger the muon counter is very small, 0.03\%.
-The efficiency of the muon counter can be measured by examining events in kinematics where muon pair production dominates, where one track tags as
-a muon, then  measuring the  probability for the second track to tag as a pion.
-
-%\item
-%Relative acceptance. The measured rates for muon and pion pairs depends on the acceptance at small angles, approximately 0.8$^o$. 
-%As the Primakoff cross section will be determined relative to muon pair production, an uncertainty is introduced because the
-%acceptance for the two processes are not quite the same. The acceptance change for the Primakoff signal over the 2$\sigma_{\theta}$=0.14$^o$,
-%is .....\%, while the muon production changes by .....\%. The relative acceptance changes by...\%. 
-
+Background subtraction.
 
 \item
-Polarization: The photon polarization is determined by measuring the azimuthal distribution of (i) $\mu^+ \mu^-$ pairs, and
-(ii) $\pi^0$ from coherent photo-production.  Since there are approximately five times as many $\mu^+ \mu^-$ pairs in the data
-as compared to $\pi^+ \pi^-$, the statistical precision will be very high in this method, approximately 0.2 \%.  The purity of the $\mu^+ \mu^-$
-sample will not be a limiting factor. Pion contamination can be estimated by assuming
- 5 hadronic interaction lengths for FCAL + iron absorber, then the  probability for a pion
-to punch through is approximately 0.7 \%. The probability for both pions to punch through,  weighted by the 1:5 pion:muon ratio, is
-negligible. Pions can also register as muons through pion decay (see discussion below for ``One or both pions decays in flight'').  
-Taking the worst case that
-all 4 \% of the pions that decay will be tagged as muons, gives a pion contamination in the muon yield of 0.03 \%.
-
-
-\begin{figure}[th]
-\centering
-%\includegraphics[width=4in]{figures/sample_phi_psi_fit.pdf}
-\caption{Example fits of the $\phi_{\pi\pi}$ spectrum (top, red) and the $\psi_{\pi\pi}$ spectrum (bottom, blue) for the $W_{\pi\pi}$ bin centered at $330 MeV/c^2$. The polarization was fixed at 70\% (corresponding to the generated data set). The one free parameter of the fit gave either the fraction of Primakoff (top) or $\rho^{o}$ (bottom) events. The angles used here are from generated values, but with a cut on $\theta>0.8^{\circ}$ to represent the acceptance of the detector.}
-\label{sample_phi_psi_fit}
-\end{figure}
-
-\begin{figure}[tp]
-\centering
-%\includegraphics[width=5in]{figures/Wpipi_fit.pdf}
-\caption{Results of all fits similar to those shown in Figure \ref{sample_phi_psi_fit}. The fractions obtained from the $\phi_{\pi\pi}$($\psi_{\pi\pi}$) dependent fits are used to calculate the number of Primakoff($\rho^{o}$) events in each $W_{\pi\pi}$ bin. The red(blue) markers indicate the extracted number of events of each type in the bin and the magenta squares are the sums of the red and blue points in each bin. Values used here are generated, but with a cut on $\theta>0.8^{\circ}$ to represent the acceptance of the detector. }
-\label{Wpipi_fit}
-\end{figure}
-
-
-\item
-Pion identified as muon, and pion decay: These issues are linked, through pion decay, 
-and require a unified calibration treatment using simulation and data analysis. 
-To limit the uncertainty in correcting the data  we expect that it will be necessary
-to carefully simulate pion decay in the experiment, and calibrate the simulation relative to experimental data. Calibration data might be taken in a kinematic regime where $\gamma A \rightarrow \rho^0 A$ dominates over muon pair production by several orders of magnitude. 
-We are developing a detailed simulation of the experimental setup to study the effects of pion decay. 
-The overall correction factor for these effects will be approximately 8 \%.  We believe that by careful simulation, and calibration of 
-the simulation to experimental data, the uncertainty in this correction factor can be limited to $\approx 1 \% $.  
-
+Detector acceptance and efficiency.
 
 \item
 Total systematic error: Combining the systematic errors in quadrature gives 1.5\%.
 
 \item
 Projected error in $\alpha - \beta$: Combining the statistical and systematic errors in quadrature,  and using the approximate sensitivity of the
-cross sections to $\alpha - \beta$, ($\Delta(\alpha - \beta)/\Delta \sigma = 130\% /20\%$ ), gives an estimated error of 10 \%.  The absolute 
+cross sections to $\alpha - \beta$, ($\Delta(\alpha - \beta)/\Delta \sigma = 130\% /20\%$), gives an estimated error of 10 \%.  The absolute 
 error in $\alpha -\beta$ is therefore $\pm 0.6 \times 10^{-4} fm^3$ . 
 
 \end{enumerate}
 
-\begin{figure}[tp]
-\centering
-%\includegraphics[width=5in]{figures/cpp_theory_fit.pdf}
-\caption{Theory curves for two predicted values of $\alpha_{\pi}-\beta_{\pi}$, the dashed
-curve is for 5.7 (ChPT), the dotted curve is for 13.0 (Fil'kov). 
-The black points are published data from the MARK-II measurement. 
-The red points indicate the anticipated statistical errors for the proposed measurement.
-Error bars are taken from those for the Primakoff fits (red) in Figure \ref{Wpipi_fit}.}
-\label{cpp_theory_fit}
-\end{figure}
-
-\clearpage
-
-\section{Summary and beam request}
+\section{Summary and beam request CPP}
 
 Table \ref{request} summarizes the beam request and experimental requirements for the measurement.  20 days are requested for
 data production, which  will allow the statistical error to be reasonably below the projected systematic
@@ -149,7 +87,7 @@ Five running  days are requested for the calibration of the muon chambers and te
 \end{center}
 \end{table}
 
-\section{Summary}
+\section{Summary and beam request}
 
 We have investigated the possibility of determining the neutral pion
 polarizabilities $\alpha_{\pi^0}-\beta_{\pi^0}$ by making a
